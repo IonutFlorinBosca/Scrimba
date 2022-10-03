@@ -1,0 +1,1 @@
+Created my business card using HTML and CSS. Main focus was on styling; I used flexbox, a custom colour palette, shadow and hover effects!
