@@ -1,0 +1,141 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Verdana, sans-serif;
+}
+
+.name {
+    display: block;
+    width: 260px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    background: #39393A;
+}
+
+.person-name,
+.name-title {
+    color: #fff;
+}
+
+.person-name {
+    margin: 0;
+    padding-top: 6px;
+}
+
+.name-title {
+    margin: 10px 0;
+}
+
+#me {
+    color: #FF8552;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pillars {
+    width: 40px;
+    background: #FF8552;
+}
+
+.linkedin,
+.phone,
+.footer-icons {
+    margin: auto;
+    text-align: center;
+}
+
+.link,
+.number,
+.github-link {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.img-wrapper {
+    width: 150px;
+    height: 150px;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.img-wrapper {
+  display: inline-block;
+  background-image: url(images/hello.png);
+}
+
+.img-wrapper > img {
+  vertical-align: top;
+}
+
+.img-wrapper > img:hover {
+  opacity: 0;
+}
+
+.base {
+    width: 37%;
+    height: 60px;
+    background: #39393A;
+}
+
+.git {
+    text-align: center;
+    width: 30%;
+    height: 60px;
+}
+
+.footer {
+    display: flex;
+}
+
+.card {
+    width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    color: #2b2839;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+
+//Utility CSS Classes
+
+.border-radius{
+    5px;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
