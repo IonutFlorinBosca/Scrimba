@@ -1,0 +1,156 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+Sandy Brown: #F89D5B
+Cadet Blue: #A2B7C6
+Baby Blue: #A5C6E5
+Middle Grey: #8C8581
+Air Superiority Blue: #87A4C2
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Spinnaker', sans-serif;
+}
+
+img {
+    width: 180px;
+    border-radius: 40%;
+    border: 1px solid #F8C878;
+}
+
+/* -----HERO SECTION----- */
+
+#header {
+    background: url("images/Copenhagen.jpg");
+    background-size: cover;
+    width: 720px;
+    height: 343px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #F18C49;
+}
+
+#header-info {
+    display: inline-block;
+    width: 450px;
+    padding: 10px;
+    margin: 100px auto;
+}
+
+#title-container {
+    width: 305px;
+    height: auto;
+    margin: 0 auto 10px;
+    background: #6387A7;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#subtitle-container {
+    background: #5A8FBE;
+    border-radius: 10px;
+    color: #fff;
+}
+
+h1 {
+    margin: 5px;
+    padding: 5px;
+    font-size: 32px;
+}
+
+h2 {
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+}
+
+/* -----ACTIVITIES SECTION------ */
+
+#activities {
+    margin: 0 auto;
+    width: 720px;
+    height: 378px;
+    background: #AFC6D3;
+    border: 2px solid #F8C878;
+}
+
+h3 {
+    margin: 0;
+    padding-top: 30px;
+}
+
+h4 {
+    margin: 10px
+}
+
+p {
+    font-size: 16px;
+}
+
+#activities-container {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -----GUIDE SECTION------ */
+
+#guide {
+    width: 720px;
+    height: 394px;
+    margin: 0 auto;
+}
+
+.guide-container {
+    margin: 50px auto;
+    width: 500px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    background: #85FFC7;
+    border-bottom: 5px solid #297373;
+    border-radius: 10px;
+}
+
+.guide-info {
+    width: 250px;
+    margin-top: 20px;
+}
+
+.guide-img {
+    background-image: url("images/songoku.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 225px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #F8C878;
+}
+
+.guide-p {
+    font-style: italic;
+    quotes: '"' '"' "'" "'";
+}
+
+/* ------PSEUDO-SELECTORS------- */
+
+.guide-p::before {
+  content: open-quote;
+}
+.guide-p::after {
+  content: close-quote;
+}
+
+.guide-img:hover {
+    background-image: url("images/supersayan.jpg");
+    background-size: cover;
+}
+
+/* Utility classes */
+
+.border-blue {
+    border: 5px solid blue;
+}
