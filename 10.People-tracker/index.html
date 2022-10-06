@@ -1,0 +1,33 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="frame">
+            <div id="screen">
+                <div id="date">
+                    <p>Current Date and Time is <span id='date-time'></span>.</p>
+                </div>
+                <div id="info">
+                    <h1>New check-ins:</h1>
+                    <h2 id="count-el">0</h2>
+                    <p id="save-el">Previous check-ins: </p>
+                </div>
+                <div id="nav">
+                    <button 
+                        id="increment-btn" 
+                        class="btn-i" 
+                        onclick="increment()">INCREASE
+                    </button>
+                    <button 
+                        id="save-btn" 
+                        class="btn-s"
+                        onclick="save()">SAVE
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js">   
+        </script>
+    </body>
+</html>
