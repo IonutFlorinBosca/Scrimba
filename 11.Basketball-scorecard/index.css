@@ -1,0 +1,141 @@
+/* ------FONTS------ */
+@font-face {
+    font-family: "Cursed Timer ULiL";
+    src: url("/Cursed_Timer_ULiL/CursedTimerULiL.eot?") format("eot"),url("/Cursed_Timer_ULiL/CursedTimerULiL.woff") format("woff"),url("/Cursed_Timer_ULiL/CursedTimerULiL.ttf") format("truetype"),url("/Cursed_Timer_ULiL/CursedTimerULiL.svg#CursedTimerULiL") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+/* ------BODY------- */
+
+body, p, h3 {
+    margin: 0;
+}
+
+body {
+    background: url(basketball.jpg);
+    background-size: cover;
+}
+
+
+/* ----PROJECT CONTAINER------ */
+
+.main-container {
+    margin: 50px auto;
+    width: 745px;
+    height: 525px;
+    background: #1B244A;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -----SCORE SECTION-------- */
+
+.fourth-container{
+    width: 320px;
+    margin: 0 auto;
+}
+
+.container {
+    text-align: center;
+    padding: 5px;
+    font-size: 52px;
+    border-radius: 5px;
+    background: #080001;
+    color: #fff;
+}
+
+.score p, #period-score p {
+    color: #FDE68A;
+}
+
+.btns-container {
+    height: 40px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.btn {
+    background: none;
+    border: 1px solid #9AABD8;
+    border-radius: 5px;
+    padding: 8px 16px;
+    color: #fff;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+
+.btn:hover {
+    background: #FBBF24;
+}
+
+/* ------TEAMS SECTION------- */
+
+h3 {
+    font-size: 36px;
+    color: #fff;
+}
+
+p {
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    padding-top: 10px;
+}
+
+.teams-score-container {
+    text-align: center;
+    font-size: 58px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background: #080001;
+    color: #fff;
+}
+
+.teams-score-container p{
+    color: #F43F5E;
+}
+
+.teams-btn {
+    background: none;
+    border: 1px solid #9AABD8;
+    border-radius: 5px;
+    padding: 6px 8px;
+    color: #fff;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+
+.fifth-container {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.teams-container {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.teams-score-container {
+    width: 75px;
+}
+
+#resume:hover {
+    background: #FBBF24;
+}
+
+.teams-btn:hover {
+    background: #F43F5E;
+}
+
+/* ------UTILITY CLASS-------*/
+.border-blue {
+    border: 2px dashed blue;
+}

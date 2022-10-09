@@ -1,0 +1,76 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <!------ PROJECT CONTAINER ------->
+       
+       <div class="main-container">
+            
+            <!----- SCORING AND TEAMS CONTAINER ------>
+            
+            <div class="secondary-container">
+                <div class="third-container">
+                   
+                    <!------- SCORING CONTAINER ------>
+                    
+                    <div class="fourth-container">
+                        <div class="score container">
+                            <p id="timer">00:00</p>
+                        </div>
+                        <div class="btns-container">
+                            <button class="btn" id="start" onclick="startTimer()">START GAME</button>
+                            <button class="btn" id="pause" onclick="pauseTimer()">PAUSE GAME</button>
+                        </div>
+                    </div>
+                    
+                    <!------------- TEAMS CONTAINER ----------->
+                    
+                    <div class="fifth-container">
+                        <div class="teams-container">
+                            <div class="teams-title-container">
+                                <h3>HOME</h3>
+                            </div>
+                            <div class="teams-score-container">
+                                <p id="home-score">0</p>
+                            </div>
+                            <div class="teams-btns-container">
+                                <button class="teams-btn" id="plus1" onclick="increaseOne()">+1</button>
+                                <button class="teams-btn" id="plus2" onclick="increaseTwo()">+2</button>
+                                <button class="teams-btn" id="plus3" onclick="increaseThree()">+3</button>
+                            </div>
+                        </div>
+
+                        <div class="teams-container">
+                            <div class="teams-title-container">
+                                <h3>PERIOD</h3>
+                            </div>
+                            <div class="teams-score-container" id="period-score">
+                                <p id="period">0</p>
+                            </div>
+                            <div class="teams-btns-container">
+                                <button  class="teams-btn" id="resume" onclick="resetTimer()">RESET GAME</button>
+                            </div>
+                        </div>
+                        
+                        <div class="teams-container">
+                            <div class="teams-title-container">
+                                <h3>GUEST</h3>
+                            </div>
+                            <div class="teams-score-container">
+                                <p id="guest-score">0</p>
+                            </div>
+                            <div class="teams-btns-container">
+                                <button class="teams-btn" id="plus1" onclick="increaseOneG()">+1</button>
+                                <button class="teams-btn" id="plus2" onclick="increaseTwoG()">+2</button>
+                                <button class="teams-btn" id="plus3" onclick="increaseThreeG()">+3</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
