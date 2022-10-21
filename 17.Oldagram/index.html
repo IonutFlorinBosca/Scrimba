@@ -1,0 +1,56 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="frame">
+            <div class="container">
+                <i class="arrow right" id="btn-right"></i>
+                <i class="arrow left" id="btn-left"></i>
+                <header class="padding">
+                    <img src="images/logo.png" alt="text logo" class="avatar-logo">
+                    <img 
+                    src="images/user-avatar.png" 
+                    alt="avatar of the user" 
+                    class="avatar"
+                    >
+                </header>
+                <main>
+                    <section class="post-avatar">
+                        <div class="avatar-title padding">
+                            <img 
+                            alt="avatar of person in the post" 
+                            class="avatar"
+                            id="avatar"
+                            >
+                            <div class="avatar-name">
+                                <h3 id="name"></h3>
+                                <p class="light-font" id="location"></p>
+                            </div>
+                        </div>
+                        <img 
+                        alt="photo of person in the post" 
+                        class="post-photo"
+                        id="post"
+                        > 
+                    </section>
+                                
+                    <section class="post-interactions padding">
+                        <div class="icons">
+                            <img src="images/icon-heart.png" alt="icons used for interactivity" class="icon" id="heart-icon">
+                            <img src="images/icon-comment.png" alt="icons used for interactivity" class="icon">
+                            <img src="images/icon-dm.png" alt="icons used for interactivity" class="icon">
+                        </div>
+                        <p class="enhance-text" id="likes"></p>
+                        <p class="enhance-text" id="username"></p> 
+                        <p id="comment"></p>
+                    </section>
+                </main>
+            </div>
+        </div>    
+        <script src="index.js"></script>
+    </body>
+</html>

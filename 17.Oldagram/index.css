@@ -1,0 +1,145 @@
+/* -----general selectors----- */
+
+html, 
+body,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* -----frame mobile----- */
+
+.frame {
+    width: 395px;
+    height: 750px;
+    background: #121212;
+    border-radius: 40px;
+    margin: 10px auto;
+}
+
+/* -----body container----- */
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+    height: 680px;
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    overflow: hidden;
+}
+
+/* -----header------ */
+
+header {
+    height: 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.avatar-logo {
+    width: 127px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+/* -----post-avatar----- */
+
+h3 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.light-font {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.avatar-name {
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+
+h3 span {
+    display: block;
+}
+
+.post-photo {
+    width: 375px;
+    height: 375px;
+}
+
+/* -----post-interactions------- */
+
+.icon {
+    width: 23px;
+    height: 22px;
+    margin-right: 8px;
+}
+
+.icon:hover {
+    opacity: .5;
+}
+
+#username {
+    display: inline-block;
+}
+
+#comment {
+    display: inline-block;
+    margin-left: 2px;
+}
+
+/* -----arrow-buttons----- */
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  opacity: .3;
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: relative;
+  top: 350px;
+  left: 350px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  position: relative;
+  top: 350px;
+}
+
+/* -----utility-classes------ */
+
+.padding {
+    padding: 10px 7.5px;
+}
+
+.enhance-text {
+    font-weight: 700;
+    font-size: 13px;
+    padding: 12px 0 0;
+}
