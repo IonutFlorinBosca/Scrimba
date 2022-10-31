@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'DeliusSwash';
+    src: url(fonts/DeliusSwashCaps-Regular.ttf);
+}
+
+body {
+    min-width: 350px;
+    margin: 0;
+    padding: 0;
+    font-family: 'DeliusSwash', sans-serif;
+    text-align: center;
+}
+
+/* -----header section------ */
+
+header {
+    background: linear-gradient(to right, #E10A0A, #0094EA);
+    height: 120px;
+    width: 100%;
+}
+
+h2,
+h1 {
+    margin: 0;
+    padding-bottom: 5px;
+    color: #F8C878;
+}
+
+.header-style {
+    border-bottom: 3px solid #550303;
+}
+
+h2 {
+    font-weight: 500;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.logo {
+    width: 120px;
+    margin-top: 20px;
+}
+
+.header-container {
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+}
+
+/* ------Main section-----*/
+
+h3 {
+    font-weight: 600;
+    margin: 40px 0;
+}
+
+.age-container {
+    margin: 1px auto;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #550303;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.gender-container {
+    width: 220px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    width: 220px;
+    padding: 10px 20px;
+    background: linear-gradient(#E10A0A, #0094EA);
+    color: #F8C878;
+    text-shadow: 2px 2px 5px #131313;
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 20px;
+    font-family: 'DeliusSwash', sans-serif;
+}
+
+.btn:hover {
+    background: #2E0303;
+    color: #FFF;
+}
+
+/* -----gift-box----- */
+
+.gift-selection {
+    display: none;
+    width: 425px;
+    height: 528px;
+    background: #e9d4ae;
+    border: 3px solid #550303;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.gift-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 425px;
+    height: 450px;
+}
+
+.gift-box-close-btn {
+   float: right;
+   border-radius: 45%;
+   border: 1px solid #550303;
+   color: #121212;
+   padding: 5px;
+   margin: 10px 10px 0 0;
+   opacity: .5;
+}
+
+.gift-slider {
+    width: 400px;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gift-img {
+    width: 250px;
+    height: 250px;
+}
+
+.arrows {
+    width: 30px;
+    height: 30px;
+    opacity: .5;
+}
+
+/* -----Styling classes----- */
+
+.input-radio-active {
+    padding: 8px;
+    background: #e9d4ae;
+    font-weight: 800;
+    text-shadow: 1px 1px 3px whitesmoke;
+}
+
+.display-on {
+    display: inline-block;
+}
+
+.secondary-btn:hover {
+    opacity: 1;
+    color: #550303;
+}

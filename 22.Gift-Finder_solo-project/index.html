@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>Gift Finder</title>
+</head>
+<body>
+    <header>
+       <img class="logo" src="images/Gift-logo.png" alt="logo displaying a gift wrapped in blue and red"> 
+       <div class="header-container">
+            <h2>Need to buy a last-minute gift?</h2>
+            <h1>Gift <span class="header-style">Finder</span></h1>
+       </div>
+    </header>
+    <main>
+        <h3>The one who's birthday you almost forgot is:</h3>
+        <section class="age-list" id="age-list">
+            <div class="age-container">
+                <label for="teen" class="teen-label">A Teenager</label>
+                <input 
+                type="radio"
+                name="teen"
+                id="teen"
+                value="teen"
+                >
+            </div>
+
+            <div class="age-container">
+                <label for="adult" class="adult-label">An adult</label>
+                <input 
+                type="radio"
+                name="adult"
+                id="adult"
+                value="adult"
+                >
+            </div>
+
+            <div class="age-container">
+                <label for="elder" class="elder-label">An elder</label>
+                <input 
+                type="radio"
+                name="elder"
+                id="elder"
+                value="elder"
+                >
+            </div>
+        </section>
+
+        <div class="gender-container" id="gender-container">
+            <div class="select-male" class="gender-select">
+                <label for="isForHim">For Him</label>
+                <input 
+                type="checkbox"
+                name="male"
+                id="isForHim"
+                value="isForHim"
+                >
+            </div>
+
+            <div class="select-female" class="gender-select">
+                <label for="isForHer">For Her</label>
+                <input 
+                type="checkbox"
+                name="female"
+                id="isForHer"
+                value="isForHer"
+                >
+            </div>
+        </div>
+
+        <button class="btn find-btn" id="gift-box-find-btn">Find Gift</button>
+
+        <section class="gift-selection" id="gift-selection-window">
+            <button class="gift-box-close-btn secondary-btn" id="gift-box-close-btn">X</button>
+            <div class="gift-box">
+                <div class="gift-slider" id="gift-slider">
+                </div>
+                <button class="gift-box-buy-btn btn" id="gift-box-buy-btn">Buy Gift</button>
+            </div>
+        </section>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
