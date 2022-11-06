@@ -103,6 +103,7 @@ button{
 }
 
 .btn-send-reply{
+    margin-top: 10px;
     width: 60%;
 }
 /* tweet */

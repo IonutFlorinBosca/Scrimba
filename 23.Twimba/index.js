@@ -10,10 +10,12 @@ document.querySelector('main').oncontextmenu = (e) => {
 
 document.addEventListener('click', function(e){
     if(e.target.dataset.like){
-       handleLikeClick(e.target.dataset.like) 
+       handleLikeClick(e.target.dataset.like)
+       addTrashTweetOption() 
     }
     else if(e.target.dataset.retweet){
         handleRetweetClick(e.target.dataset.retweet)
+        addTrashTweetOption()
     }
     else if(e.target.dataset.reply){
         handleReplyModal(e.target)
@@ -74,7 +76,6 @@ function handleLikeClick(tweetId){
     }
     targetTweetObj.isLiked = !targetTweetObj.isLiked
     render()
-    addTrashTweetOption()
 }
 
 function handleRetweetClick(tweetId){
@@ -89,8 +90,7 @@ function handleRetweetClick(tweetId){
         targetTweetObj.retweets++
     }
     targetTweetObj.isRetweeted = !targetTweetObj.isRetweeted
-    render()
-    addTrashTweetOption()
+    render() 
 }
 
 function handleTweetBtnClick(){
@@ -107,10 +107,10 @@ function handleTweetBtnClick(){
             isLiked: false,
             isRetweeted: false,
             uuid: uuidv4()
-        })
+        })   
     render()
-    addTrashTweetOption()
     tweetInput.value = ''
+    addTrashTweetOption()
     }
 
 }
@@ -129,16 +129,15 @@ function addTrashTweetOption(){
     })
     if(isOwnTweet){
         document.querySelector('.tweet-details').innerHTML += `
-        <span class="tweet-detail" id="trash-tweet">
-            <i class="fa-solid fa-trash"
-            data-trash="${uuidv4()}"
-            ></i>
-        </span>
+            <span class="tweet-detail" id="trash-tweet">
+                <i class="fa-solid fa-trash"
+                data-trash="${uuidv4()}"
+                ></i>
+            </span>
         `
+        isOwnTweet = !isOwnTweet
     }
-    document.getElementById('trash-tweet').addEventListener('click', function(){
-        trashTweet()
-    })
+    document.getElementById('trash-tweet').addEventListener('click', trashTweet)
 }
 
 function getFeedHtml(){
@@ -157,9 +156,7 @@ function getFeedHtml(){
         if (tweet.isRetweeted){
             retweetIconClass = 'retweeted'
         }
-        
-        let trashIconClass = 'hidden'
-        
+            
         let repliesHtml = ''
         
         if(tweet.replies.length > 0){
@@ -204,6 +201,7 @@ function getFeedHtml(){
                     ></i>
                     ${tweet.retweets}
                 </span>
+                
             </div>   
         </div>            
     </div>
