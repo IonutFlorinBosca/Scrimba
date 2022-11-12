@@ -1,0 +1,99 @@
+body,
+p{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #121212;
+    color: whitesmoke;
+    display: flex;
+    gap: 10px;
+    padding: 15px 25px;
+    align-items: center;
+}
+
+header p{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logo{
+    width: 25px;
+    cursor: pointer;
+}
+
+.burger{
+    width: 25px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.description{
+    padding: 15px 25px;
+}
+
+.description p{
+    font-size: 40px;
+    color: #121212;
+}
+
+.img{
+    width: 100%;
+    display: block;
+}
+
+.section1{
+    position: relative;
+}
+
+
+.banner{
+    padding: 8px 12px;
+    background-color: lightsalmon;
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.caption{
+    font-size: 20px;
+    color: #121212;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+button{
+    padding: 8px 12px;
+    font-weight: 700;
+    background-color: lightsalmon;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    align-self: center;
+}
+
+.chatbox{
+    width: 40px;
+    height: 40px;
+    background-color: lightcoral;
+    box-shadow: 1px 1px 5px #999;
+    border-radius: 50%;
+    display: flex;
+    position: fixed;
+    bottom: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+
+.chat-img{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}

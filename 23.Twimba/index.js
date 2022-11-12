@@ -43,7 +43,7 @@ function handleSendReplyBtnClick(idOfClickedIcon){
     render()
     addTrashTweetOption()
     replyInput.value = ''
-    document.getElementById('btn-send-reply').replaceWith(document.getElementById('btn-send-reply').cloneNode(true))
+    document.querySelector('.btn-send-reply').replaceWith(document.querySelector('.btn-send-reply').cloneNode(true))
     }
 }
 
