@@ -1,0 +1,141 @@
+body,
+h2,
+h3,
+p,
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* ----header and nav---- */
+
+header{
+    background: purple;
+    text-align: center;
+    color: whitesmoke;
+    padding: 1em;
+}
+
+header h2{
+    font-size: 1.75rem;
+}
+
+header p{
+    font-size: 1rem;
+    color: plum;
+}
+
+nav{
+    margin-top: 1em;
+}
+
+nav li{
+    list-style: none;
+    padding: .5em 0;
+    cursor: pointer;
+}
+
+nav li:hover{
+    color: beige;
+    font-size: 1.05rem;
+}
+
+nav li:not(:last-child){
+    border-bottom: 1px dotted #999;
+}
+
+/* ----featured images---- */
+
+.section1{
+    padding: 1em;
+}
+
+.section1 h3{
+    color: purple;
+    font-weight: 700;
+}
+
+.img{
+    width: 100%;
+    border-radius: 5px;
+    padding-bottom: 1em;
+}
+
+.section1 p{
+    line-height: 1.25;
+    margin-bottom: 1em;
+}
+
+button{
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: .5em 1em;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.purchase-btn{
+    background-color: purple;
+    color: whitesmoke;
+}
+
+.info-btn{
+    background-color: plum;
+    color: purple;
+}
+
+.section1 button:hover{
+    color: beige;
+    font-size: .9rem;
+}
+
+.section2{
+    padding: 1em;
+    line-height: 1.25;
+    background-color: purple;
+    color: whitesmoke;
+}
+
+.section2 h4{
+    margin: 0 0 1em 0;
+}
+
+.items-wrapper{
+    display: flex;
+    gap: .5em;
+    flex-wrap: wrap;
+}
+
+.item{
+    flex: 1 250px;
+    margin-bottom: 1em;
+}
+
+.section2 .purchase-btn{
+    background: plum;
+}
+
+@media (min-width: 550px){
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+        gap: 1em;
+    }
+
+    nav li:not(:last-child){
+        border-bottom: none;
+    }
+
+    button{
+        width: auto;
+        display: inline-block;
+    }
+}
